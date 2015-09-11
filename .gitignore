@@ -1,0 +1,12 @@
+*.xccheckout
+*.DS_Store
+*xcuserdata*
+*build*
+*Frameworks*
+.idea
+docs/
+
+# fastlane
+fastlane/report.xml
+*app.dSYM.zip
+*.ipa
