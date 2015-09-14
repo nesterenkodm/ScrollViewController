@@ -53,6 +53,10 @@ public class ScrollViewController : UIViewController {
                 viewController.view.removeFromSuperview()
                 viewController.removeFromParentViewController()
                 self.title = nil
+                
+                if let scrollableViewController = viewController as? ScrollableViewController {
+                    scrollableViewController.scrollViewController = nil
+                }
             }
         }
         didSet {
